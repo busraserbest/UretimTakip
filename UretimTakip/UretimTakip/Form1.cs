@@ -26,6 +26,8 @@ namespace UretimTakip
         private void Form1_Load(object sender, EventArgs e)
         {
             SiparisGetir();
+            SiparisGetir1();
+            SiparisGetir2();
 
         }
 
@@ -33,7 +35,7 @@ namespace UretimTakip
         {
         
             baglanti.Open();
-            string kayit = "SELECT * from TBLSIPATRA";
+            string kayit = "SELECT * from dbo.DN_SiparisIzleme";
             SqlCommand komut = new SqlCommand(kayit, baglanti);
             SqlDataAdapter da = new SqlDataAdapter(komut);
             DataTable dt = new DataTable();
@@ -44,12 +46,49 @@ namespace UretimTakip
 
         }
 
+        private void SiparisGetir1()
+        {
+
+            baglanti.Open();
+            string kayit = "SELECT * from dbo.DN_SiparisIzleme";
+            SqlCommand komut = new SqlCommand(kayit, baglanti);
+            SqlDataAdapter da = new SqlDataAdapter(komut);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            dataGridView2.DataSource = dt;
+            baglanti.Close();
+
+
+        }
+
+        private void SiparisGetir2()
+        {
+
+            baglanti.Open();
+            string kayit = "SELECT * from dbo.DN_SiparisIzleme";
+            SqlCommand komut = new SqlCommand(kayit, baglanti);
+            SqlDataAdapter da = new SqlDataAdapter(komut);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            dataGridView3.DataSource = dt;
+            baglanti.Close();
+
+
+        }
+
+
+
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
         {
 
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void dataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
