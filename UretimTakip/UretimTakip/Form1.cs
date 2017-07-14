@@ -17,7 +17,7 @@ namespace UretimTakip
         {
             InitializeComponent();
         }
-        static string conString = "Server=DESKTOP-GI10KRJ\\SQLEXPRESS;Database=ROTA2017;Uid=sa;Password=sapass;";
+        static string conString = "Server=NETCOLLEC\\SQLEXPRESS;Database=ROTA2017;Uid=sa;Password=sapass;";
         SqlConnection baglanti = new SqlConnection(conString);
 
 
@@ -26,8 +26,9 @@ namespace UretimTakip
         private void Form1_Load(object sender, EventArgs e)
         {
             SiparisGetir();
-            SiparisGetir1();
-            SiparisGetir2();
+            UretimFisGetir();
+            FaturaGetir();
+           
 
         }
 
@@ -35,42 +36,51 @@ namespace UretimTakip
         {
         
             baglanti.Open();
-            string kayit = "SELECT * from dbo.DN_SiparisIzleme";
-            SqlCommand komut = new SqlCommand(kayit, baglanti);
+
+         
+    
+            
+            SqlCommand komut = new SqlCommand("dbo.NCB_URT_SIPARIS", baglanti);
+            komut.CommandType = CommandType.StoredProcedure;
             SqlDataAdapter da = new SqlDataAdapter(komut);
             DataTable dt = new DataTable();
             da.Fill(dt);
-            dataGridView1.DataSource = dt;
+            dgvSiparis.DataSource = dt;
             baglanti.Close();
 
 
         }
 
-        private void SiparisGetir1()
-        {
+        private void UretimFisGetir() {
 
             baglanti.Open();
-            string kayit = "SELECT * from dbo.DN_SiparisIzleme";
-            SqlCommand komut = new SqlCommand(kayit, baglanti);
+
+
+
+
+            SqlCommand komut = new SqlCommand("dbo.NCB_URT_KAYIT", baglanti);
+            komut.CommandType = CommandType.StoredProcedure;
             SqlDataAdapter da = new SqlDataAdapter(komut);
             DataTable dt = new DataTable();
             da.Fill(dt);
-            dataGridView2.DataSource = dt;
+            dgvUretim.DataSource = dt;
             baglanti.Close();
 
 
         }
 
-        private void SiparisGetir2()
-        {
-
+        private void FaturaGetir() {
             baglanti.Open();
-            string kayit = "SELECT * from dbo.DN_SiparisIzleme";
-            SqlCommand komut = new SqlCommand(kayit, baglanti);
+
+
+
+
+            SqlCommand komut = new SqlCommand("dbo.NCB_URT_FAT", baglanti);
+            komut.CommandType = CommandType.StoredProcedure;
             SqlDataAdapter da = new SqlDataAdapter(komut);
             DataTable dt = new DataTable();
             da.Fill(dt);
-            dataGridView3.DataSource = dt;
+            dgvFatura.DataSource = dt;
             baglanti.Close();
 
 
