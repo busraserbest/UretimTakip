@@ -31,6 +31,7 @@ namespace UretimTakip
 
         private void SiparisGetir()
         {
+        
             baglanti.Open();
             string kayit = "SELECT * from TBLSIPATRA";
             SqlCommand komut = new SqlCommand(kayit, baglanti);
