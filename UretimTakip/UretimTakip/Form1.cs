@@ -20,7 +20,7 @@ namespace UretimTakip
         private void Form1_Load(object sender, EventArgs e)
         {
             //Hadi Hayırlı Olsun :)
-//deneme
+//deneme  
         }
     }
 }
