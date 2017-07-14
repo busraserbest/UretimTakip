@@ -6,3 +6,12 @@ C:\Users\NetCollec\Source\Repos\UretimTakipReal\UretimTakip\UretimTakip\obj\Debu
 C:\Users\NetCollec\Source\Repos\UretimTakipReal\UretimTakip\UretimTakip\obj\Debug\UretimTakip.csproj.GenerateResource.Cache
 C:\Users\NetCollec\Source\Repos\UretimTakipReal\UretimTakip\UretimTakip\obj\Debug\UretimTakip.exe
 C:\Users\NetCollec\Source\Repos\UretimTakipReal\UretimTakip\UretimTakip\obj\Debug\UretimTakip.pdb
+C:\Users\NetCollec\Source\Repos\f\UretimTakip\UretimTakip\UretimTakip\bin\Debug\UretimTakip.exe.config
+C:\Users\NetCollec\Source\Repos\f\UretimTakip\UretimTakip\UretimTakip\bin\Debug\UretimTakip.exe
+C:\Users\NetCollec\Source\Repos\f\UretimTakip\UretimTakip\UretimTakip\bin\Debug\UretimTakip.pdb
+C:\Users\NetCollec\Source\Repos\f\UretimTakip\UretimTakip\UretimTakip\obj\Debug\UretimTakip.csprojResolveAssemblyReference.cache
+C:\Users\NetCollec\Source\Repos\f\UretimTakip\UretimTakip\UretimTakip\obj\Debug\UretimTakip.Form1.resources
+C:\Users\NetCollec\Source\Repos\f\UretimTakip\UretimTakip\UretimTakip\obj\Debug\UretimTakip.Properties.Resources.resources
+C:\Users\NetCollec\Source\Repos\f\UretimTakip\UretimTakip\UretimTakip\obj\Debug\UretimTakip.csproj.GenerateResource.Cache
+C:\Users\NetCollec\Source\Repos\f\UretimTakip\UretimTakip\UretimTakip\obj\Debug\UretimTakip.exe
+C:\Users\NetCollec\Source\Repos\f\UretimTakip\UretimTakip\UretimTakip\obj\Debug\UretimTakip.pdb
